@@ -21,7 +21,7 @@ const SymbolsMorseCharacters: Record<string, string> = {
     "(": "-.--.",
     ")": "-.--.-",
     "&": ".-...",
-    ":": "-.-.-.", 
+    // ":": "-.-.-.",  Typescript issue: 'Duplicate identifier'
     "+": ".-.-.",
     "-": "-....-",
     _: "..--.-",
