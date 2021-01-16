@@ -21,7 +21,7 @@ const SymbolsMorseCharacters: Record<string, string> = {
     "(": "-.--.",
     ")": "-.--.-",
     "&": ".-...",
-    // ":": "-.-.-.", issue with Typescript
+    ":": "-.-.-.", 
     "+": ".-.-.",
     "-": "-....-",
     _: "..--.-",
