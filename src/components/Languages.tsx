@@ -2,11 +2,8 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 import React from "react";
-import { connect } from "react-redux";
-import mapStateToProps from "../store/mapStateToProps";
-import mapDispatchToProps from "../store/mapDispatchToProps";
 
-type LanguagesProps = {
+export type LanguagesProps = {
     changeFirstLanguage?: (value: string) => void;
     changeSecondLanguage?: (value: string) => void;
     firstLanguage?: string;
@@ -38,8 +35,8 @@ const Languages = ({
     return (
         <div className="languages">
             <select
-                name="languages"
-                className="languages-list-firts"
+                name="languages-list-first"
+                className="languages-list-first"
                 onChange={e => setFirstLanguage(e)}
             >
                 <option value="ENG" disabled={secondLanguage !== "MORSE"}>
@@ -54,7 +51,7 @@ const Languages = ({
                 <option value="MORSE">MORSE</option>
             </select>
             <select
-                name="languages"
+                name="languages-list-second"
                 className="languages-list-second"
                 onChange={e => setSecondLanguage(e)}
             >
@@ -73,7 +70,4 @@ const Languages = ({
     );
 };
 
-export default connect<any, any, LanguagesProps>(
-    mapStateToProps("LANGUAGES"),
-    mapDispatchToProps("LANGUAGES")
-)(Languages);
+export default Languages;

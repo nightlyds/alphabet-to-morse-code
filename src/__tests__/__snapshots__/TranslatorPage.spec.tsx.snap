@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Translator tests Snapshot tests Basic snapshot test 1`] = `
+<div
+  className="translator"
+>
+  <Connect(Languages) />
+  <div
+    className="translator-field"
+  >
+    <Connect(InputText) />
+    <Connect(TranslatedText) />
+  </div>
+  <Description />
+</div>
+`;

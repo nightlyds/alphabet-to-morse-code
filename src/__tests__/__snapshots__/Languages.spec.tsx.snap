@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Languages tests Snapshot tests Basic snapshot test 1`] = `
+<div
+  className="languages"
+>
+  <select
+    className="languages-list-first"
+    name="languages-list-first"
+    onChange={[Function]}
+  >
+    <option
+      disabled={false}
+      value="ENG"
+    >
+      ENG
+    </option>
+    <option
+      disabled={false}
+      value="UK"
+    >
+      UK
+    </option>
+    <option
+      disabled={false}
+      value="RU"
+    >
+      RU
+    </option>
+    <option
+      value="MORSE"
+    >
+      MORSE
+    </option>
+  </select>
+  <select
+    className="languages-list-second"
+    name="languages-list-second"
+    onChange={[Function]}
+  >
+    <option
+      value="MORSE"
+    >
+      MORSE
+    </option>
+    <option
+      disabled={true}
+      value="ENG"
+    >
+      ENG
+    </option>
+    <option
+      disabled={true}
+      value="UK"
+    >
+      UK
+    </option>
+    <option
+      disabled={true}
+      value="RU"
+    >
+      RU
+    </option>
+  </select>
+</div>
+`;

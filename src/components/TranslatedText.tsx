@@ -1,11 +1,8 @@
 /* eslint-disable react/require-default-props */
 import React, { useEffect, useState } from "react";
-import { connect } from "react-redux";
 import { CopyToClipboard } from "react-copy-to-clipboard";
-import mapStateToProps from "../store/mapStateToProps";
-import mapDispatchToProps from "../store/mapDispatchToProps";
 
-type TranslatedTextProps = {
+export type TranslatedTextProps = {
     inputText?: string;
 };
 
@@ -18,18 +15,17 @@ const TranslatedText = ({ inputText = "" }: TranslatedTextProps) => {
     return (
         <div className="translated-text">
             <textarea
-                className="input-text-textarea"
+                className="translated-text-textarea"
                 disabled
                 placeholder={translatedText}
             />
-            <CopyToClipboard text={translatedText}>
-                <span className="input-text-copy">Copy</span>
-            </CopyToClipboard>
+            <div className="translated-text-copy">
+                <CopyToClipboard text={translatedText}>
+                    <span className="translated-text-copy-link">Copy</span>
+                </CopyToClipboard>
+            </div>
         </div>
     );
 };
 
-export default connect<any, any, TranslatedTextProps>(
-    mapStateToProps("TRANSLATED_TEXT"),
-    mapDispatchToProps("")
-)(TranslatedText);
+export default TranslatedText;

@@ -1,11 +1,8 @@
 /* eslint-disable react/require-default-props */
 import React from "react";
-import { connect } from "react-redux";
-import mapStateToProps from "../store/mapStateToProps";
-import mapDispatchToProps from "../store/mapDispatchToProps";
-import Translator from "./functions/Translator";
+import Translator from "../functions/Translator";
 
-type InputTextProps = {
+export type InputTextProps = {
     changeText?: (value: string) => void;
     firstLanguage?: string;
     secondLanguage?: string;
@@ -38,7 +35,4 @@ const InputText = ({
     );
 };
 
-export default connect<any, any, InputTextProps>(
-    mapStateToProps("INPUT_TEXT"),
-    mapDispatchToProps("INPUT_TEXT")
-)(InputText);
+export default InputText;

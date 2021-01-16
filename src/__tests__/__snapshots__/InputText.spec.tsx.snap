@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputText tests Snapshot tests Basic snapshot test 1`] = `
+<div
+  className="input-text"
+>
+  <textarea
+    className="input-text-textarea"
+    onChange={[Function]}
+    placeholder="Type your text here.."
+  />
+</div>
+`;

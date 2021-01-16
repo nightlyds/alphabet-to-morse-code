@@ -3,8 +3,10 @@ import { Route, Switch, BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import store from "./store/store";
 import "normalize.css";
-import "./basic/css/fonts_and_colors.css";
-import Error404 from "./basic/components/Error404";
+import "./css/style.css";
+import "./css/media_style.css";
+import "./css/fonts_and_colors.css";
+import Error404 from "./components/Error404";
 import TranslatorPage from "./TranslatorPage";
 
 function App() {

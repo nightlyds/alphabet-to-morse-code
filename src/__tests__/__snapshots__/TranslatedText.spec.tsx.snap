@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TranslatedText tests Snapshot tests Basic snapshot test 1`] = `
+<div
+  className="translated-text"
+>
+  <textarea
+    className="translated-text-textarea"
+    disabled={true}
+    placeholder=""
+  />
+  <div
+    className="translated-text-copy"
+  >
+    <CopyToClipboard
+      text=""
+    >
+      <span
+        className="translated-text-copy-link"
+      >
+        Copy
+      </span>
+    </CopyToClipboard>
+  </div>
+</div>
+`;

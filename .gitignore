@@ -5,8 +5,3 @@ coverage
 yarn.lock
 yarn-debug.log*
 yarn-error.log*
-
-**/__tests__
-**/*.spec.js
-
-**/basic
