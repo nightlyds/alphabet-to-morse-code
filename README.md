@@ -1,6 +1,6 @@
 # ALPHABET TO MORSE CODE :computer:
 
-That`s Morse code translator. You can translate English | Ukraine | Russia languages to Morse code and back. Just type words or symbols on your language into the first field and get the translation of that in the another one, also if you want type Morse code, you have to make in this way: type one Morse code charater and put on space, just like this: '.---- ..--- ...--'. I hope you like it, have fun!
+That`s Morse code translator. You can translate English | Ukraine | Russia languages to Morse code and back. Just type words or symbols on your language into the first field and get the translation of that in the another one, also if you want type Morse code, you have to make in this way: type one Morse code charater and put on space, just like this: '.---- ..--- ...-- '. I hope you like it, have fun!
 
 ## Installation
 
